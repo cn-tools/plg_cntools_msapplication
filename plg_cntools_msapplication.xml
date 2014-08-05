@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_CNTOOLS_MSAPPLICATION</name>
+	<author>CN-Tools</author>
+	<creationDate>August 2014</creationDate>
+	<authorEmail>cn-tools@gmx.at</authorEmail>
+	<authorUrl>https://github.com/cn-tools/</authorUrl>
+	<copyright>Copyright (c) 2013-2014 Clemens Neubauer. All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0</license>
+	<version>0.0.1</version>
+	<description>PLG_CNTOOLS_MSAPPLICATION_BASE_DESC</description>
+	<files>
+		<filename plugin="plg_cntools_msapplication">plg_cntools_msapplication.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="de-DE">languages/de-DE/de-DE.plg_system_plg_cntools_msapplication.ini</language>
+		<language tag="de-DE">languages/de-DE/de-DE.plg_system_plg_cntools_msapplication.sys.ini</language>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_system_plg_cntools_msapplication.ini</language>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_system_plg_cntools_msapplication.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_categories/models/fields/modal">
+			<fieldset name="basic" label="PLG_CNTOOLS_MSAPPLICATION_BAISC_LABEL">
+				<field name="caption" type="text" default="" size="50" label="PLG_CNTOOLS_MSAPPLICATION_CAPTION" description="PLG_CNTOOLS_MSAPPLICATION_CAPTION_DESC" />
+				<field name="tooltip" type="text" default="" size="" label="PLG_CNTOOLS_MSAPPLICATION_TOOLTIP" description="PLG_CNTOOLS_MSAPPLICATION_TOOLTIP_DESC" />
+				<field name="color" type="color" default="" size="" label="PLG_CNTOOLS_MSAPPLICATION_COLOR" description="PLG_CNTOOLS_MSAPPLICATION_COLOR_DESC" />
+
+				<field name="image70x70" type="media" default="" label="PLG_CNTOOLS_MSAPPLICATION_IMAGE70X70" description="PLG_CNTOOLS_MSAPPLICATION_IMAGE70X70_DESC" />
+				<field name="image150x150" type="media" default="" label="PLG_CNTOOLS_MSAPPLICATION_IMAGE150X150" description="PLG_CNTOOLS_MSAPPLICATION_IMAGE150X150_DESC" />
+				<field name="image310x150" type="media" default="" label="PLG_CNTOOLS_MSAPPLICATION_IMAGE310X150" description="PLG_CNTOOLS_MSAPPLICATION_IMAGE310X150_DESC" />
+				<field name="image310x310" type="media" default="" label="PLG_CNTOOLS_MSAPPLICATION_IMAGE310X310" description="PLG_CNTOOLS_MSAPPLICATION_IMAGE310X310_DESC" />
+
+				<field name="rss_url" type="Modal_Category" label="PLG_CNTOOLS_MSAPPLICATION_RSSURL" description="PLG_CNTOOLS_MSAPPLICATION_RSSURL_DESC" />
+                <field name="rss_type" type="list" default="RSS" label="PLG_CNTOOLS_MSAPPLICATION_RSSTYPE" description="PLG_CNTOOLS_MSAPPLICATION_RSSTYPE_DESC">
+                    <option value="RSS">RSS</option>
+                    <option value="ATOM">Atom</option>
+                </field>
+                <field name="rss_frequency" type="list" default="0" label="PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY" description="PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_DESC">
+                    <option value="0">JNO</option>
+                    <option value="30">PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_30MINUTES</option>
+                    <option value="60">PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_1HOUR</option>
+                    <option value="360">PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_6HOURS</option>
+                    <option value="720">PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_12HOURS</option>
+                    <option value="1440">PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_1DAY</option>
+                </field>
+
+				<field name="basic_hidden1" type="hidden" default="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
