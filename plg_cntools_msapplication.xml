@@ -7,7 +7,7 @@
 	<authorUrl>https://github.com/cn-tools/</authorUrl>
 	<copyright>Copyright (c) 2013-2014 Clemens Neubauer. All Rights Reserved</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0</license>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<description>PLG_CNTOOLS_MSAPPLICATION_BASE_DESC</description>
 	<files>
 		<filename plugin="plg_cntools_msapplication">plg_cntools_msapplication.php</filename>
@@ -45,7 +45,7 @@
 
 				<field name="basic_hidden1" type="hidden" default="" />
 			</fieldset>
-
+<!--
 			<fieldset name="browserconfigfile" label="PLG_CNTOOLS_MSAPPLICATION_BROWSERCONFIGFILE_LABEL">
 				<field name="xmlfile" type="list" default="0" label="PLG_CNTOOLS_MSAPPLICATION_BROWSERCONFIGXML" description="PLG_CNTOOLS_MSAPPLICATION_BROWSERCONFIGXML_DESC" readonly="true">
 					<option value="1">JYES</option>
@@ -54,7 +54,7 @@
 
 				<field name="browserconfigfile_hidden1" type="hidden" default="" />
 			</fieldset>
-
+-->
 			<fieldset name="rss" label="PLG_CNTOOLS_MSAPPLICATION_RSS_LABEL">
 				<field name="rss_frequency" type="list" default="0" label="PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY" description="PLG_CNTOOLS_MSAPPLICATION_RSSFREQUENCY_DESC">
 					<option value="0">JNO</option>
