@@ -26,7 +26,7 @@ defined('_JEXEC') or die('Restricted access');
 class plgSystemPlg_CNTools_MSApplication extends JPlugin
 {
 
-	function plgSystemPlg_CNTools_MSApplication (&$subject, $config)
+	public function __construct(&$subject, $config)
 	{
 		parent::__construct($subject, $config);
 	}
